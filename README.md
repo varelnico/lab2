@@ -5,7 +5,7 @@
 
 ---
 
-## LAB 2 – KONDISIONAL (IF)
+## – KONDISIONAL (IF)
 
 ### Latihan 1 – Bilangan terbesar dari 4 input
 
@@ -75,7 +75,7 @@
 
 ---
 
-## LAB 2 – PERULANGAN
+## – PERULANGAN
 
 ### Latihan 1 – Pola segitiga bintang
 
@@ -118,58 +118,6 @@
        if x < 0.5:
            print(x)
            count += 1
-   ```
-
----
-
-### Latihan 3 – Mengurutkan input dengan perulangan
-
-**Dengan cara:**
-
-1. Input jumlah data:
-
-   ```python
-   n = int(input("Jumlah data: "))
-   ```
-2. Simpan setiap data ke list:
-
-   ```python
-   values = []
-   for i in range(n):
-       values.append(int(input(f"Masukkan data ke-{i+1}: ")))
-   ```
-3. Urutkan data dengan perulangan bersarang:
-
-   ```python
-   for i in range(len(values)):
-       for j in range(0, len(values)-1-i):
-           if values[j] > values[j+1]:
-               values[j], values[j+1] = values[j+1], values[j]
-   ```
-4. Cetak hasil urutan:
-
-   ```python
-   print("Data urut:", values)
-   ```
-
----
-
-### Latihan 4 – Tabel perkalian
-
-**Dengan cara:**
-
-1. Masukkan batas angka:
-
-   ```python
-   n = int(input("Masukkan batas tabel: "))
-   ```
-2. Gunakan dua perulangan bersarang untuk menampilkan hasil perkalian:
-
-   ```python
-   for i in range(1, n+1):
-       for j in range(1, n+1):
-           print(f"{i*j:4}", end="")
-       print()
    ```
 
 ---
